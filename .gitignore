@@ -1,6 +1,4 @@
 .idea
-app/vendor
-app/logs
+app/
 docker/db
-public/
-storage/
+.env

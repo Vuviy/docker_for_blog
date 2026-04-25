@@ -2,6 +2,7 @@ version: '3'
 
 services:
   php:
+    container_name: blog_php
     build: './docker/php'
     volumes:
       - './app:/var/www/html'
@@ -20,7 +21,7 @@ services:
 
   db_blog:
     image: postgres:16
-    container_name: db_blog
+    container_name: blog_db
     environment:
       POSTGRES_DB: ${DB_DATABASE}
       POSTGRES_USER: ${DB_USERNAME}
